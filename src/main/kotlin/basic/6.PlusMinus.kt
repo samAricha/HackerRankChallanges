@@ -1,22 +1,8 @@
 package org.example.basic
 
-import java.io.*
-import java.math.*
-import java.security.*
-import java.text.*
-import java.util.*
-import java.util.concurrent.*
-import java.util.function.*
-import java.util.regex.*
-import java.util.stream.*
 import kotlin.collections.*
-import kotlin.comparisons.*
 import kotlin.io.*
-import kotlin.jvm.*
-import kotlin.jvm.functions.*
-import kotlin.jvm.internal.*
 import kotlin.ranges.*
-import kotlin.sequences.*
 import kotlin.text.*
 
 /*
@@ -31,26 +17,17 @@ fun plusMinus(arr: Array<Int>): Unit {
     var positiveCount = 0
     var negativeCount = 0
     var neutralCount = 0
-    for (i in 0 until arrSize){
-//        if (arr[i] > 0){
-//            positiveCount++
-//        }else if(arr[i] < 0){
-//            negativeCount++
-//        }else if(arr[i] == 0){
-//            neutralCount++
-//        }
 
+    for (i in 0 until arrSize){
         when{
             arr[i] > 0 -> positiveCount++
             arr[i] < 0 -> negativeCount++
             arr[i] == 0 -> neutralCount++
         }
     }
-
-    println((positiveCount.toFloat()/arrSize))
+    println(positiveCount.toFloat()/arrSize)
     println(negativeCount.toFloat()/arrSize)
     println(neutralCount.toFloat()/arrSize)
-
 }
 
 fun main(args: Array<String>) {
